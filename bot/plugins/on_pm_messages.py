@@ -61,17 +61,19 @@ async def on_pm_s(client: Bot, message: Message):
         reply_to_message_id = None
         if ym:
             reply_to_message_id = ym.message_id
-        await message.copy(
+        c_m = await message.copy(
             chat_id=AUTH_CHANNEL,
             disable_notification=True,
             reply_to_message_id=reply_to_message_id,
             reply_markup=message.reply_markup
         )
+        await c_m.react("👍")
     else:
         fwded_mesg = await message.forward(
             chat_id=AUTH_CHANNEL,
             disable_notification=True
         )
+        await fwded_mesg.react("👍")
 
     if not fwded_mesg:
         return
