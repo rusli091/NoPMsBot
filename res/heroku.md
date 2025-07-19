@@ -1,16 +1,16 @@
-# Telegram Relay Bot
+# Cara termudah untuk menerapkan Bot ini.
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [COPYING](./../COPYING) for more details.
+[![Terapkan](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SpEcHIDe/NoPMsBot)
 
+## Variabel Lingkungan yang Diperlukan
+* `TG_BOT_TOKEN`: Token Bot Telegram Anda, dari @BotFather
+* `APP_ID`: ID Aplikasi Telegram Anda, dari my.telegram.org
+* `API_HASH`: Hash API Telegram Anda, dari my.telegram.org
+* `AUTH_CHANNEL`: ID Saluran Telegram, tempat bot harus meneruskan pesan.
+* `DATABASE_URL`: URL basis data Anda.
 
-## installing
-
-#### The Easiest Way [ Heroku ONLY ]
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SpEcHiDe/NoPMsBot)
-
-
-## Credits, and Thanks to
-
-* [ThankTelegram](https://telegram.dog/ThankTelegram)
-* [Dan Tès](https://telegram.dog/haskell) for his [Pyrogram Library](https://github.com/pyrogram/pyrogram)
+### Catatan
+* Beberapa perintah mungkin tidak berfungsi dengan benar, jika Anda mengubah awalan perintah default.
+* Jika Anda ingin menggunakan bot ini untuk tujuan komersial, silakan dapatkan lisensi yang sesuai.
+* Bot ini tidak dimaksudkan untuk digunakan dalam grup.
+* Bot ini tidak dimaksudkan untuk digunakan sebagai bot pengguna.

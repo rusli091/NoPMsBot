@@ -72,6 +72,6 @@ async def ban_command(client: Client, message: Message):
         )
     await message.reply_text(
         f"<a href='tg://user?id={user_id}'>"
-        "user"
-        "</a> <b>banned</b> <i>forever</i>."
+        "pengguna"
+        "</a> <b>berhasil</b> <i>diblokir</i>."
     )

@@ -1,22 +1,28 @@
-## IMPORTANT NOTICE:
+# NoPMsBot
+Bot Telegram sederhana untuk meneruskan semua Pesan Pribadi yang masuk ke Saluran Auth.
 
-This project is no longer maintained, and should be considered deprecated. __Use at your own risk__.
+## Variabel Lingkungan yang Diperlukan
+* `TG_BOT_TOKEN`: Token Bot Telegram Anda, dari @BotFather
+* `APP_ID`: ID Aplikasi Telegram Anda, dari my.telegram.org
+* `API_HASH`: Hash API Telegram Anda, dari my.telegram.org
+* `AUTH_CHANNEL`: ID Saluran Telegram, tempat bot harus meneruskan pesan.
+* `DATABASE_URL`: URL basis data Anda.
 
-Telegram have made many breaking changes since this bot was last updated, and as such, there are no expectations that
-this will work. Notably, user IDs have gone from 32 bit to 64, which will cause issues with the database that I do not believe are worth fixing.
+## Cara Menggunakan
+* Balas pesan apa pun yang diteruskan dengan `/ban` untuk memblokir pengguna agar tidak menggunakan bot.
+* Balas pesan apa pun yang diteruskan dengan `/unban` untuk membuka blokir pengguna.
+* Gunakan `/start` untuk memeriksa apakah bot sedang online.
+* Kirim stiker apa pun sebagai balasan ke pesan yang diteruskan, untuk mengirim stiker itu kepada pengguna.
+* Kirim media / file apa pun sebagai balasan ke pesan yang diteruskan, untuk mengirim media / file itu kepada pengguna.
+* Kirim teks apa pun sebagai balasan ke pesan yang diteruskan, untuk mengirim teks itu kepada pengguna.
 
-If you are simply looking for a feedback bot to use, I would like to encourage giving
-[NoPMsBot](https://t.me/TopicSupport/87) a try; it was built as [NoPMsBot](https://t.me/shriMADhaBot)'s successor, and has many of the same features (but is much faster and better with [the latest Topic](https://t.me/TelegramTips/362) features)!
+### Catatan
+* Beberapa perintah mungkin tidak berfungsi dengan benar, jika Anda mengubah awalan perintah default.
+* Jika Anda ingin menggunakan bot ini untuk tujuan komersial, silakan dapatkan lisensi yang sesuai.
+* Bot ini tidak dimaksudkan untuk digunakan dalam grup.
+* Bot ini tidak dimaksudkan untuk digunakan sebagai bot pengguna.
 
-# Telegram Relay Bot
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [COPYING](./COPYING) for more details.
-
-## Demo RoBot
-
-- [@shriMADhaBot](https://telegram.dog/shriMADhaBot)
-
-## Credits, and Thanks to
-
-* [ThankTelegram](https://telegram.dog/TG)
-* [Dan Tès](https://telegram.dog/haskell) for his [Pyrogram Library](https://github.com/pyrogram/pyrogram)
+## Lisensi
+* Program ini adalah perangkat lunak bebas: Anda dapat mendistribusikan kembali dan/atau memodifikasinya di bawah persyaratan Lisensi Publik Umum GNU Affero seperti yang diterbitkan oleh Free Software Foundation, baik versi 3 dari Lisensi, atau (sesuai pilihan Anda) versi yang lebih baru.
+* Program ini didistribusikan dengan harapan akan bermanfaat, tetapi TANPA JAMINAN APA PUN; bahkan tanpa jaminan tersirat tentang KELAYAKAN DIPERDAGANGKAN atau KESESUAIAN UNTUK TUJUAN TERTENTU. Lihat Lisensi Publik Umum GNU Affero untuk detail lebih lanjut.
+* Anda seharusnya sudah menerima salinan Lisensi Publik Umum GNU Affero bersama dengan program ini. Jika tidak, lihat <https://www.gnu.org/licenses/>.

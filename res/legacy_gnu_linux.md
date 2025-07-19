@@ -1,18 +1,19 @@
-# Telegram Relay Bot
+# Cara menerapkan di Server Pribadi Virtual Linux
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [COPYING](./../COPYING) for more details.
+## Perintah untuk dijalankan
+```
+git clone https://github.com/SpEcHIDe/NoPMsBot.git
+cd NoPMsBot
+virtualenv -p /usr/bin/python3 venv
+. ./venv/bin/activate
+pip install -r requirements.txt
+# EDIT sample_config.env MENJADI config.env
+# dan kemudian,
+python3 -m bot
+```
 
-
-#### The Legacy Way [ for GNU/Linux users, ~~if you are comfortable with messing up your system~~]
-
-- if you want to run this bot in your GNU/Linux System,
-- `mv sample_config.env config.env`
-- Edit the `config.env` with the appropriate values.
-- Read below, to understand what the configuration variables does.
-- Run `python -m bot`.
-
-
-## Credits, and Thanks to
-
-* [ThankTelegram](https://telegram.dog/ThankTelegram)
-* [Dan Tès](https://telegram.dog/haskell) for his [Pyrogram Library](https://github.com/pyrogram/pyrogram)
+### Catatan
+* Beberapa perintah mungkin tidak berfungsi dengan benar, jika Anda mengubah awalan perintah default.
+* Jika Anda ingin menggunakan bot ini untuk tujuan komersial, silakan dapatkan lisensi yang sesuai.
+* Bot ini tidak dimaksudkan untuk digunakan dalam grup.
+* Bot ini tidak dimaksudkan untuk digunakan sebagai bot pengguna.
