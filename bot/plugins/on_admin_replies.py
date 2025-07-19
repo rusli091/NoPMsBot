@@ -63,7 +63,6 @@ async def on_pm_s(client: Client, message: Message):
             user_id,
             reply_message_id
         )
-        await message.reply_to_message.react("👀")
     except UserIsBlocked:
         await message.reply_text(BOT_WS_BLOCKED_BY_USER)
     else:
