@@ -8,6 +8,36 @@ Bot Telegram sederhana untuk meneruskan semua Pesan Pribadi yang masuk ke Salura
 * `AUTH_CHANNEL`: ID Saluran Telegram, tempat bot harus meneruskan pesan.
 * `DATABASE_URL`: URL basis data Anda.
 
+## Cara Menjalankan di VPS
+1.  **Kloning Repositori**:
+    ```
+    git clone https://github.com/SpEcHIDe/NoPMsBot.git
+    cd NoPMsBot
+    ```
+2.  **Buat dan Aktifkan Lingkungan Virtual**:
+    ```
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+3.  **Instal Dependensi**:
+    ```
+    pip install -r requirements.txt
+    ```
+4.  **Konfigurasi Variabel Lingkungan**:
+    *   Salin `sample_config.env` ke `config.env`:
+        ```
+        cp sample_config.env config.env
+        ```
+    *   Edit `config.env` dengan editor teks favorit Anda (misalnya, `nano`):
+        ```
+        nano config.env
+        ```
+    *   Isi semua variabel yang diperlukan dengan nilai Anda sendiri.
+5.  **Jalankan Bot**:
+    ```
+    python3 -m bot
+    ```
+
 ## Cara Menggunakan
 * Balas pesan apa pun yang diteruskan dengan `/ban` untuk memblokir pengguna agar tidak menggunakan bot.
 * Balas pesan apa pun yang diteruskan dengan `/unban` untuk membuka blokir pengguna.

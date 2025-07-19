@@ -51,7 +51,11 @@ class Bot(Client):
         self.LOGGER = LOGGER
 
     async def start(self):
-        await super().start()
+        try:
+            await super().start()
+        except Exception as e:
+            self.LOGGER(__name__).error(e)
+            exit(1)
         usr_bot_me = await self.get_me()
         self.set_parse_mode("html")
         try:
