@@ -58,44 +58,44 @@ BAN_COMMAND = get_config("BAN_COMMAND", "ban")
 UN_BAN_COMMAND = get_config("UN_BAN_COMMAND", "unban")
 # start command
 START_COMMAND = get_config("START_COMMAND", "start")
-# default message in-case of None types
+# pesan default jika tidak ada tipe
 DEFAULT_START_TEXT = (
-    "Hi. ☺️\n"
-    "Thank you for using me 😬\n\n"
-    "This is an Open Source Project available on "
+    "Hai. ☺️\n"
+    "Terima kasih telah menggunakan saya 😬\n\n"
+    "Ini adalah Proyek Sumber Terbuka yang tersedia di "
     "https://github.com/SpEcHIDe/NoPMsBot\n\n\n"
-    "If you are the owner of this bot, "
-    "and are seeing this message 🤦‍♂️, "
-    "means that you have not set up "
-    "the ENVironment variables properly "
-    "for the bot to function.\n\n\n"
-    "ℹ️ Subscribe @SpEcHlDe if you 😍 using this bot❗️❣️"
+    "Jika Anda adalah pemilik bot ini, "
+    "dan melihat pesan ini 🤦‍♂️, "
+    "berarti Anda belum mengatur "
+    "variabel Lingkungan dengan benar "
+    "agar bot berfungsi.\n\n\n"
+    "ℹ️ Berlangganan @SpEcHlDe jika Anda 😍 menggunakan bot ini❗️❣️"
 )
-# /start message when other users start your bot
+# Pesan /mulai saat pengguna lain memulai bot Anda
 START_OTHER_USERS_TEXT = int(get_config(
     "START_OTHER_USERS_TEXT",
     0
 ))
-# check online status of your bot
+# periksa status online bot Anda
 ONLINE_CHECK_START_TEXT = get_config(
     "ONLINE_CHECK_START_TEXT",
     (
-        "i am online <b>master</b>\n\n"
-        "This is an Open Source Project available on "
+        "saya online <b>master</b>\n\n"
+        "Ini adalah Proyek Sumber Terbuka yang tersedia di "
         "https://github.com/SpEcHiDe/NoPMsBot\n\n\n"
-        "ℹ️ Subscribe @SpEcHlDe if you 😍 using this bot❗️❣️"
+        "ℹ️ Berlangganan @SpEcHlDe jika Anda 😍 menggunakan bot ini❗️❣️"
     )
 )
-# message to indicate,
-# if any message was deleted by the user
-# so as to prevent replying to that message
+# pesan untuk menunjukkan,
+# jika ada pesan yang dihapus oleh pengguna
+# untuk mencegah membalas pesan itu
 DELETED_MESSAGES_NOTIFICATION_TEXT = get_config(
     "DELETED_MESSAGES_NOTIFICATION_TEXT",
     (
-        "this message was deleted\n\n"
-        "This is an Open Source Project available on "
+        "pesan ini telah dihapus\n\n"
+        "Ini adalah Proyek Sumber Terbuka yang tersedia di "
         "https://github.com/SpEcHiDe/NoPMsBot\n\n\n"
-        "ℹ️ Subscribe @SpEcHlDe if you 😍 using this bot❗️❣️"
+        "ℹ️ Berlangganan @SpEcHlDe jika Anda 😍 menggunakan bot ini❗️❣️"
     )
 )
 # IDEKWBYRW
@@ -103,12 +103,12 @@ DERP_USER_S_TEXT = get_config(
     "DERP_USER_S_TEXT",
     "😐"
 )
-# message to show when user is banned
+# pesan untuk ditampilkan saat pengguna diblokir
 IS_BLACK_LIST_ED_MESSAGE_TEXT = get_config(
     "IS_BLACK_LIST_ED_MESSAGE_TEXT",
     (
-        "You have been <b>banned</b> forever.\n\n"
-        "<u>Reason</u>: <code>{reason}</code>"
+        "Anda telah <b>diblokir</b> selamanya.\n\n"
+        "<u>Alasan</u>: <code>{reason}</code>"
     )
 )
 # IDEKWBYRW
@@ -116,18 +116,18 @@ REASON_DE_LIMIT_ER = get_config(
     "REASON_DE_LIMIT_ER",
     "\n\n"
 )
-# message to show when user is unbanned
+# pesan untuk ditampilkan saat pengguna tidak diblokir
 IS_UN_BANED_MESSAGE_TEXT = get_config(
     "IS_UN_BANED_MESSAGE_TEXT",
     (
-        "You have been <b>un-banned</b>.\n\n"
-        "<u>Reason</u>: <code>{reason}</code>"
+        "Blokir Anda telah <b>dibuka</b>.\n\n"
+        "<u>Alasan</u>: <code>{reason}</code>"
     )
 )
-# message to show if bot was blocked by user
+# pesan untuk ditampilkan jika bot diblokir oleh pengguna
 BOT_WS_BLOCKED_BY_USER = get_config(
     "BOT_WS_BLOCKED_BY_USER",
-    "Bot was blocked by the user."
+    "Bot diblokir oleh pengguna."
 )
 # path to store LOG files
 LOG_FILE_ZZGEVC = get_config("LOG_FILE_ZZGEVC", "NoPMsBot.log")
